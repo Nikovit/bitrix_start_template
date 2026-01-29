@@ -18,8 +18,8 @@ IncludeTemplateLangFile(__FILE__);
     use Bitrix\Main\Page\Asset;
 
     // Bootstrap
-    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/vendor/bootstrap/css/bootstrap.min.css');
-    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/vendor/bootstrap/js/bootstrap.js');
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/bootstrap/css/bootstrap.min.css');
+    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/bootstrap/js/bootstrap.js');
     // JS
     CJSCore::Init(array("jquery"));
     // STRING
@@ -27,11 +27,11 @@ IncludeTemplateLangFile(__FILE__);
     // Fonts
     Asset::getInstance()->addString("<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,800&amp;subset=cyrillic' rel='stylesheet'>");
     // Swiper-slider
-    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/vendor/swiper-slider/swiper-bundle.min.css');
-    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/vendor/swiper-slider/swiper-bundle.min.js');
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/swiper-slider/swiper-bundle.min.css');
+    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/swiper-slider/swiper-bundle.min.js');
     //    // Fancybox
-    //    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/vendor/fancybox/fancybox.css');
-    //    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/vendor/fancybox/fancybox.umd.js');
+    //    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/fancybox/fancybox.css');
+    //    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/fancybox/fancybox.umd.js');
 
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/script.js');
 
